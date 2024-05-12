@@ -1,6 +1,16 @@
-// 해당 위치에 필요한 컴포넌트를 바탕으로 직접 Bootstrap Album 페이지를 개발하시면 됩니다.
-function App() {
-  return <>다들 화이팅 !</>;
-}
+import React from 'react';
+import Jumbotron from './pages/Jumbotron';
+import Navbar from './components/Navbar';
+import BodyContainer from './pages/BodyContainer';
+import Footer from './pages/Footer';
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <Navbar />
+      <Jumbotron />
+      <BodyContainer />
+      <Footer />
+    </>
+  );
+}
